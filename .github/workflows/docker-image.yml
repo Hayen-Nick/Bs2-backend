@@ -26,4 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: nickhayen/pe-backend
+          tags: nickhayen
+/
+pe-backend
