@@ -19,11 +19,11 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
       -
         name: Build and push
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: nickhayen/pe backend
+          tags: nickhayen/pe-backend
